@@ -2,10 +2,10 @@
 
 Step 1. Fork the Project. <br/>
 Step 2. Clone the project. <br/>
-Step 3. Move to Kanban-Board directory. <br/>
+Step 3. Move to wealthup directory. <br/>
 
 ```bash
-cd Kanban-Board
+cd wealthup
 ```
 
 Step 4. Install the dependencies. <br/>
