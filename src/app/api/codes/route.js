@@ -5,11 +5,8 @@ import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-
-    let client;
-
     try {
-        client = await mongoose.connect(process.env.MONGO_URL);
+        await mongoose.connect(process.env.MONGO_URL);
     } catch (error) {
         console.error("MongoDB connection error:", error);
         return NextResponse.json({ message: err.message }, { status: 500 });

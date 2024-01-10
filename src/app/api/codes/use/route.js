@@ -3,11 +3,8 @@ import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
-
-    let client;
-
     try {
-        client = await mongoose.connect(process.env.MONGO_URL);
+        await mongoose.connect(process.env.MONGO_URL);
     } catch (error) {
         console.error("MongoDB connection error:", error);
     }
